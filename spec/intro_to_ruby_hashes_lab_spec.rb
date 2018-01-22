@@ -124,7 +124,7 @@ describe "building a multidimensional monopoly hash" do
       it "sets the 1st key of the :reading_railroad hash to a string, 'mortgage_value', whose value is '$100'" do
 
         expect(monopoly_with_fourth_tier.values[0][:names].has_key?(:reading_railroad)).to be true
-        expect(monopoly_with_fourth_tier.values[0][:names].values[0].has_key?("mortgage_value")).to be true
+        expect(monopoly_with_fourth_tier.values[0][:names].values[0].has_key?(:mortgage_value)).to be true
         expect(monopoly_with_fourth_tier.values[0][:names].values[0].values[0]).to eq("$100")
       end
 
